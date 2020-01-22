@@ -8,4 +8,5 @@ alias l="ls -Al"
 
 # Jupyter notebook Settings
 cp ~/temp_files/jupyter_notebook_config.py ~/.jupyter
-alias jn="jupyter notebook"
+alias jn="nohup jupyter notebook &"
+alias myip="curl -4sSkL https://myip.ipip.net"
