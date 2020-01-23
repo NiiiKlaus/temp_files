@@ -10,4 +10,4 @@ alias l="ls -Al"
 cp ~/sandbox/temp_files/jupyter_notebook_config.py ~/.jupyter
 alias jn="nohup jupyter notebook &"
 alias myip="curl -4sSkL https://myip.ipip.net"
-echo "myip"
+echo "$(myip)"
