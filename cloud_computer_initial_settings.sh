@@ -5,7 +5,7 @@ git config --global user.email "1372063766@qq.com"
 alias c="clear"
 alias s="neofetch"
 alias l="ls -Al"
-alias ss="source ~/sandbox/cloud_computer_initial_settings.sh"
+alias ss="source ~/sandbox/temp_files/cloud_computer_initial_settings.sh"
 alias g="git pull"
 
 # Jupyter notebook Settings
