@@ -7,6 +7,6 @@ alias s="neofetch"
 alias l="ls -Al"
 
 # Jupyter notebook Settings
-cp ~/temp_files/jupyter_notebook_config.py ~/.jupyter
+cp ~/sandbox/temp_files/jupyter_notebook_config.py ~/.jupyter
 alias jn="nohup jupyter notebook &"
 alias myip="curl -4sSkL https://myip.ipip.net"
