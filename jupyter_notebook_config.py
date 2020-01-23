@@ -45,7 +45,7 @@
 #  Use '*' to allow any origin to access your server.
 #  
 #  Takes precedence over allow_origin_pat.
-c.NotebookApp.allow_origin = '*'
+#c.NotebookApp.allow_origin = ''
 
 ## Use a regular expression for the Access-Control-Allow-Origin header
 #  
@@ -79,7 +79,7 @@ c.NotebookApp.allow_origin = '*'
 #  
 #  Local IP addresses (such as 127.0.0.1 and ::1) are allowed as local, along
 #  with hostnames configured in local_hostnames.
-c.NotebookApp.allow_remote_access = True
+#c.NotebookApp.allow_remote_access = False
 
 ## Whether to allow the user to run the notebook as root.
 c.NotebookApp.allow_root = True
@@ -284,7 +284,7 @@ c.NotebookApp.open_browser = False
 #c.NotebookApp.password_required = False
 
 ## The port the notebook server will listen on.
-c.NotebookApp.port = 8888
+c.NotebookApp.port = 5080
 
 ## The number of additional ports to try if the specified port is not available.
 #c.NotebookApp.port_retries = 50
