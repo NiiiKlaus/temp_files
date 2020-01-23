@@ -1,5 +1,5 @@
 sudo_commands=(
-apt-get install neofetch
+"apt-get install neofetch"
 )
 
 if [ $(whoami) = root ]
