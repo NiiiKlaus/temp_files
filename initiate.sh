@@ -24,10 +24,10 @@ git config --global user.email "1372063766@qq.com"
 source $DIR/scripts/*.sh
 
 # at last
-echo "commands to be executed:"
-echo
-for command in ${sudo_commands[@]}
-do
-    echo "sudo $command"
-    echo
-done
+# echo "commands to be executed:"
+# echo
+# for command in ${sudo_commands[@]}
+# do
+    # echo "sudo $command"
+    # echo
+# done
