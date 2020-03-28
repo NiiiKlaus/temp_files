@@ -3,6 +3,9 @@ sudo_commands=(
 	"apt update"
 	"apt upgrade"
 	"apt-get install neofetch"
+	"apt-get install neovim"
+	"curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 )
 
 if [ $(whoami) = root ]
