@@ -1,5 +1,8 @@
+DIR=$(dirname $(readlink -f "$0"))
 sudo_commands=(
-"apt-get install neofetch"
+	"apt update"
+	"apt upgrade"
+	"apt-get install neofetch"
 )
 
 if [ $(whoami) = root ]
@@ -15,7 +18,7 @@ git config --global user.name "niiiklaus"
 git config --global user.email "1372063766@qq.com"
 
 # source scripts
-source ~/temp_files/scripts/*.sh
+source $DIR/scripts/*.sh
 
 # at last
 echo "commands to be executed:"

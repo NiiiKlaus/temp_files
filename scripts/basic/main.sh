@@ -1,5 +1,6 @@
 # source actions
-for action in /usr/local/scripts/basic/actions/*.sh
+dir=
+for action in 
 do
     source $action
 done
