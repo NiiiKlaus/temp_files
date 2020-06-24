@@ -1,3 +1,5 @@
+set +nx
+set -n
 # basic
 apt-get install neofetch
 git config --global user.name "niiiklaus"

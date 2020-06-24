@@ -1,0 +1,88 @@
+time 1581859861
+new [description:"task" entry:"1581859861" modified:"1581859861" status:"pending" uuid:"98d47370-aaae-4c33-87e3-c21af8c0add3"]
+---
+time 1581860916
+new [description:"proxychains" entry:"1581860916" modified:"1581860916" status:"pending" uuid:"9c755bf3-0056-4400-9186-2bac90ea8a3e"]
+---
+time 1582015095
+new [description:"powerline" entry:"1582015095" modified:"1582015095" status:"pending" uuid:"2c630672-2902-4cde-a3af-a5ed2c05be9c"]
+---
+time 1582039465
+new [description:"compton" entry:"1582039465" modified:"1582039465" status:"pending" uuid:"f2a3ea7b-1be1-426a-b14e-71961e908aba"]
+---
+time 1582556172
+new [description:"xarchiver" entry:"1582556172" modified:"1582556172" status:"pending" uuid:"a04db3e7-e38f-4040-899e-61a5164c5eaf"]
+---
+time 1582556303
+new [description:"ntfs-3g" entry:"1582556303" modified:"1582556303" status:"pending" uuid:"5ba0bc65-0207-412d-869f-6fdc6678fb3b"]
+---
+time 1582633743
+new [description:"xcompmgr" entry:"1582633743" modified:"1582633743" status:"pending" uuid:"79124228-b3c8-4da3-a11e-87e4bfdf3734"]
+---
+time 1583067700
+old [description:"xcompmgr" entry:"1582633743" modified:"1582633743" status:"pending" uuid:"79124228-b3c8-4da3-a11e-87e4bfdf3734"]
+new [description:"xcompmgr give windows transparency; an Xorg extension" entry:"1582633743" modified:"1583067700" status:"pending" uuid:"79124228-b3c8-4da3-a11e-87e4bfdf3734"]
+---
+time 1583067805
+new [description:"acpi show current battery state" entry:"1583067805" modified:"1583067805" status:"pending" uuid:"11333f66-b618-4290-8e59-7d7c5e12e5a3"]
+---
+time 1583068051
+new [description:"trayer(show systray for UNIX desktop)" entry:"1583068051" modified:"1583068051" status:"pending" uuid:"56bae150-1ac8-4301-baa9-8755488e1191"]
+---
+time 1583224581
+new [description:"tty-symbola(font that can show unicode characters)" entry:"1583224581" modified:"1583224581" status:"pending" uuid:"3ccecba8-b97a-4487-a945-e3c997a52e53"]
+---
+time 1583828704
+old [description:"ntfs-3g" entry:"1582556303" modified:"1582556303" status:"pending" uuid:"5ba0bc65-0207-412d-869f-6fdc6678fb3b"]
+new [description:"ntfs-3g" end:"1583828704" entry:"1582556303" modified:"1583828704" status:"completed" uuid:"5ba0bc65-0207-412d-869f-6fdc6678fb3b"]
+---
+time 1583829317
+old [description:"compton" entry:"1582039465" modified:"1582039465" status:"pending" uuid:"f2a3ea7b-1be1-426a-b14e-71961e908aba"]
+new [description:"compton" end:"1583829317" entry:"1582039465" modified:"1583829317" status:"completed" uuid:"f2a3ea7b-1be1-426a-b14e-71961e908aba"]
+---
+time 1583829493
+old [description:"xcompmgr give windows transparency; an Xorg extension" entry:"1582633743" modified:"1583067700" status:"pending" uuid:"79124228-b3c8-4da3-a11e-87e4bfdf3734"]
+new [description:"xcompmgr give windows transparency; an Xorg extension" end:"1583829493" entry:"1582633743" modified:"1583829493" status:"completed" uuid:"79124228-b3c8-4da3-a11e-87e4bfdf3734"]
+---
+time 1583829506
+old [description:"xarchiver" entry:"1582556172" modified:"1582556172" status:"pending" uuid:"a04db3e7-e38f-4040-899e-61a5164c5eaf"]
+new [description:"xarchiver" end:"1583829506" entry:"1582556172" modified:"1583829506" status:"completed" uuid:"a04db3e7-e38f-4040-899e-61a5164c5eaf"]
+---
+time 1583830068
+old [description:"trayer(show systray for UNIX desktop)" entry:"1583068051" modified:"1583068051" status:"pending" uuid:"56bae150-1ac8-4301-baa9-8755488e1191"]
+new [description:"trayer(show systray for UNIX desktop)" end:"1583830068" entry:"1583068051" modified:"1583830068" status:"completed" uuid:"56bae150-1ac8-4301-baa9-8755488e1191"]
+---
+time 1583830120
+old [description:"task" entry:"1581859861" modified:"1581859861" status:"pending" uuid:"98d47370-aaae-4c33-87e3-c21af8c0add3"]
+new [description:"task" end:"1583830120" entry:"1581859861" modified:"1583830120" status:"completed" uuid:"98d47370-aaae-4c33-87e3-c21af8c0add3"]
+---
+time 1583830287
+old [description:"proxychains" entry:"1581860916" modified:"1581860916" status:"pending" uuid:"9c755bf3-0056-4400-9186-2bac90ea8a3e"]
+new [description:"proxychains" end:"1583830287" entry:"1581860916" modified:"1583830287" status:"completed" uuid:"9c755bf3-0056-4400-9186-2bac90ea8a3e"]
+---
+time 1583830527
+old [description:"acpi show current battery state" entry:"1583067805" modified:"1583067805" status:"pending" uuid:"11333f66-b618-4290-8e59-7d7c5e12e5a3"]
+new [description:"acpi show current battery state" end:"1583830527" entry:"1583067805" modified:"1583830527" status:"completed" uuid:"11333f66-b618-4290-8e59-7d7c5e12e5a3"]
+---
+time 1583830549
+old [description:"powerline" entry:"1582015095" modified:"1582015095" status:"pending" uuid:"2c630672-2902-4cde-a3af-a5ed2c05be9c"]
+new [description:"powerline" end:"1583830549" entry:"1582015095" modified:"1583830549" status:"completed" uuid:"2c630672-2902-4cde-a3af-a5ed2c05be9c"]
+---
+time 1585142467
+new [description:"scrcpy" entry:"1585142467" modified:"1585142467" status:"pending" uuid:"8c2f0e79-5195-4b0c-a910-bbe9d02f1c6c"]
+---
+time 1585808698
+new [description:"lsb_release: print certain Linux Standard Base and distribution information" entry:"1585808698" modified:"1585808698" status:"pending" uuid:"1d731c49-7eee-4fcb-982b-d8f133be55bb"]
+---
+time 1585810415
+new [description:"add symlinks" entry:"1585810415" modified:"1585810415" status:"pending" uuid:"043af0ba-6b31-494e-b0e4-d8cee2375e28"]
+---
+time 1585812965
+new [description:"ft-todo: create repo for interesting projects collection" entry:"1585812965" modified:"1585812965" status:"pending" uuid:"095c7fc7-6968-44b5-b382-f7a892c63340"]
+---
+time 1585820077
+new [description:"repo sync" entry:"1585820077" modified:"1585820077" status:"pending" uuid:"afe3908f-cee9-46d5-bc11-66cd6c35a87f"]
+---
+time 1585886884
+new [description:"quip: tool for collaborating" entry:"1585886884" modified:"1585886884" status:"pending" uuid:"45dd1a91-d584-4038-8eb0-8a57cd5a86c0"]
+---

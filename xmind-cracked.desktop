@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=XMind-cracked
+GenericName=Brainstorming and Mind Mapping Software
+Comment=Launch XMind 8 Update 9
+Icon=xmind
+Path=/home/niklaus/Downloads/stable/XMind/xmind-8-update8-linux/XMind_amd64
+Exec=/home/niklaus/Downloads/stable/XMind/xmind-8-update8-linux/XMind_amd64/XMind %F
+Terminal=false
+Categories=Office;
+MimeType=application/xmind;x-scheme-handler/xmind;

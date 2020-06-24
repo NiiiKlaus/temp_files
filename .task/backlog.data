@@ -1,0 +1,26 @@
+{"description":"task","entry":"20200216T133101Z","modified":"20200216T133101Z","status":"pending","uuid":"98d47370-aaae-4c33-87e3-c21af8c0add3"}
+{"description":"proxychains","entry":"20200216T134836Z","modified":"20200216T134836Z","status":"pending","uuid":"9c755bf3-0056-4400-9186-2bac90ea8a3e"}
+{"description":"powerline","entry":"20200218T083815Z","modified":"20200218T083815Z","status":"pending","uuid":"2c630672-2902-4cde-a3af-a5ed2c05be9c"}
+{"description":"compton","entry":"20200218T152425Z","modified":"20200218T152425Z","status":"pending","uuid":"f2a3ea7b-1be1-426a-b14e-71961e908aba"}
+{"description":"xarchiver","entry":"20200224T145612Z","modified":"20200224T145612Z","status":"pending","uuid":"a04db3e7-e38f-4040-899e-61a5164c5eaf"}
+{"description":"ntfs-3g","entry":"20200224T145823Z","modified":"20200224T145823Z","status":"pending","uuid":"5ba0bc65-0207-412d-869f-6fdc6678fb3b"}
+{"description":"xcompmgr","entry":"20200225T122903Z","modified":"20200225T122903Z","status":"pending","uuid":"79124228-b3c8-4da3-a11e-87e4bfdf3734"}
+{"description":"xcompmgr give windows transparency; an Xorg extension","entry":"20200225T122903Z","modified":"20200301T130140Z","status":"pending","uuid":"79124228-b3c8-4da3-a11e-87e4bfdf3734"}
+{"description":"acpi show current battery state","entry":"20200301T130325Z","modified":"20200301T130325Z","status":"pending","uuid":"11333f66-b618-4290-8e59-7d7c5e12e5a3"}
+{"description":"trayer(show systray for UNIX desktop)","entry":"20200301T130731Z","modified":"20200301T130731Z","status":"pending","uuid":"56bae150-1ac8-4301-baa9-8755488e1191"}
+{"description":"tty-symbola(font that can show unicode characters)","entry":"20200303T083621Z","modified":"20200303T083621Z","status":"pending","uuid":"3ccecba8-b97a-4487-a945-e3c997a52e53"}
+{"description":"ntfs-3g","end":"20200310T082504Z","entry":"20200224T145823Z","modified":"20200310T082504Z","status":"completed","uuid":"5ba0bc65-0207-412d-869f-6fdc6678fb3b"}
+{"description":"compton","end":"20200310T083517Z","entry":"20200218T152425Z","modified":"20200310T083517Z","status":"completed","uuid":"f2a3ea7b-1be1-426a-b14e-71961e908aba"}
+{"description":"xcompmgr give windows transparency; an Xorg extension","end":"20200310T083813Z","entry":"20200225T122903Z","modified":"20200310T083813Z","status":"completed","uuid":"79124228-b3c8-4da3-a11e-87e4bfdf3734"}
+{"description":"xarchiver","end":"20200310T083826Z","entry":"20200224T145612Z","modified":"20200310T083826Z","status":"completed","uuid":"a04db3e7-e38f-4040-899e-61a5164c5eaf"}
+{"description":"trayer(show systray for UNIX desktop)","end":"20200310T084748Z","entry":"20200301T130731Z","modified":"20200310T084748Z","status":"completed","uuid":"56bae150-1ac8-4301-baa9-8755488e1191"}
+{"description":"task","end":"20200310T084840Z","entry":"20200216T133101Z","modified":"20200310T084840Z","status":"completed","uuid":"98d47370-aaae-4c33-87e3-c21af8c0add3"}
+{"description":"proxychains","end":"20200310T085127Z","entry":"20200216T134836Z","modified":"20200310T085127Z","status":"completed","uuid":"9c755bf3-0056-4400-9186-2bac90ea8a3e"}
+{"description":"acpi show current battery state","end":"20200310T085527Z","entry":"20200301T130325Z","modified":"20200310T085527Z","status":"completed","uuid":"11333f66-b618-4290-8e59-7d7c5e12e5a3"}
+{"description":"powerline","end":"20200310T085549Z","entry":"20200218T083815Z","modified":"20200310T085549Z","status":"completed","uuid":"2c630672-2902-4cde-a3af-a5ed2c05be9c"}
+{"description":"scrcpy","entry":"20200325T132107Z","modified":"20200325T132107Z","status":"pending","uuid":"8c2f0e79-5195-4b0c-a910-bbe9d02f1c6c"}
+{"description":"lsb_release: print certain Linux Standard Base and distribution information","entry":"20200402T062458Z","modified":"20200402T062458Z","status":"pending","uuid":"1d731c49-7eee-4fcb-982b-d8f133be55bb"}
+{"description":"add symlinks","entry":"20200402T065335Z","modified":"20200402T065335Z","status":"pending","uuid":"043af0ba-6b31-494e-b0e4-d8cee2375e28"}
+{"description":"ft-todo: create repo for interesting projects collection","entry":"20200402T073605Z","modified":"20200402T073605Z","status":"pending","uuid":"095c7fc7-6968-44b5-b382-f7a892c63340"}
+{"description":"repo sync","entry":"20200402T093437Z","modified":"20200402T093437Z","status":"pending","uuid":"afe3908f-cee9-46d5-bc11-66cd6c35a87f"}
+{"description":"quip: tool for collaborating","entry":"20200403T040804Z","modified":"20200403T040804Z","status":"pending","uuid":"45dd1a91-d584-4038-8eb0-8a57cd5a86c0"}
