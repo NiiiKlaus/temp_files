@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+/usr/bin/brctl addbr kvm-bridge
+/usr/bin/brctl addif kvm-bridge enp2s0
+/usr/bin/dhclient kvm-bridge
