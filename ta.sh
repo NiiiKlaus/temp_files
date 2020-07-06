@@ -1,0 +1,7 @@
+alias tt="ping baidu.com -c 5"
+alias rr="sudo systemctl restart dhcpcd"
+alias ic="ifconfig"
+alias srs="sudo systemctl restart systemd-networkd"
+alias sns="sudo netctl start"
+alias snr="sudo netctl restart"
+alias sne="sudo netctl enable"
