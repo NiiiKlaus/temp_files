@@ -1,0 +1,34 @@
+# This is an example PKGBUILD file. Use this as a start to creating your own,
+# and remove these comments. For more information, see 'man PKGBUILD'.
+# NOTE: Please fill out the license field for your package! If it is unknown,
+# then please put 'unknown'.
+
+# Maintainer: NiiiKlaus <youremail@domain.com>
+pkgname=yq-go
+pkgver=3.3.2
+pkgrel=1
+epoch=
+pkgdesc="Portable command-line YAML processor written in Go"
+arch=("x86_64")
+url="https://github.com/mikefarah/yq"
+license=('MIT')
+groups=()
+depends=()
+makedepends=()
+checkdepends=()
+optdepends=()
+provides=('yq')
+conflicts=('yq')
+replaces=()
+backup=()
+options=()
+install=
+changelog=
+source=("${url}/releases/download/${pkgver}/yq_linux_amd64")
+noextract=()
+md5sums=('59392333b904126dc12c4791863a01f4')
+validpgpkeys=()
+
+package() {
+	install -Dm755 yq_linux_amd64 "${pkgdir}/usr/bin/yq"
+}
