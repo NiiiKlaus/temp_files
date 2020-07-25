@@ -363,6 +363,7 @@ Plug 'jaxbot/semantic-highlight.vim' " Every variable is a different color.
 
 Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/vim-easy-align'
+Plug 'jiangmiao/auto-pairs'
 
 "" </Editor Enhancement>
 
@@ -396,6 +397,13 @@ hi NonText guibg=none
 " </Switches>
 
 " <Plugin Settings>
+
+" Do not use <C-H> to delete brackets, cause <C-H> has already been mapped to <Left> key.
+let g:AutoPairsMapCh = 0
+
+"" <auto-pairs>"
+
+"" </auto-pairs>"
 
 "" <Colorizer>
 
