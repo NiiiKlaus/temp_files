@@ -478,30 +478,30 @@ Plug 'wincent/terminus'
 " === ## Editor Enhancement ===
 " =============================
 
-" auto pairs (), {}, etc.
-Plug 'jiangmiao/auto-pairs'
+"" auto pairs (), {}, etc.
+"Plug 'jiangmiao/auto-pairs'
 " in analogy with visual-block mode
 Plug 'mg979/vim-visual-multi'
-" use <space>cn to comment a line
-Plug 'scrooloose/nerdcommenter'
+"" use <space>cn to comment a line
+"Plug 'scrooloose/nerdcommenter'
 " use gs to switch
 Plug 'AndrewRadev/switch.vim'
-" wrap or change characters used to wrap the word more easily
-Plug 'tpope/vim-surround'
+"" wrap or change characters used to wrap the word more easily
+"Plug 'tpope/vim-surround'
 " in visual mode, type i' to select all text in '', or type i) i] i}
 Plug 'gcmt/wildfire.vim'
 " use da= to delete what's after = , same for ca= etc.
 Plug 'junegunn/vim-after-object'
-" align the = in paragraph using gaip=
-Plug 'junegunn/vim-easy-align'
+"" align the = in paragraph using gaip=
+"Plug 'junegunn/vim-easy-align'
 " use Ctrl+L (insert) to toggle capslock
 Plug 'tpope/vim-capslock'
-" jump between selected words
-Plug 'easymotion/vim-easymotion'
-" automatic fold
-Plug 'Konfekt/FastFold'
-" extend " and @ in normal mode
-Plug 'junegunn/vim-peekaboo'
+"" jump between selected words
+"Plug 'easymotion/vim-easymotion'
+"" automatic fold
+"Plug 'Konfekt/FastFold'
+"" extend " and @ in normal mode
+"Plug 'junegunn/vim-peekaboo'
 " faster substitution
 Plug 'svermeulen/vim-subversive'
 " automatic close quotes etc.

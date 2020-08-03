@@ -51,6 +51,10 @@ set nowrap                                        " Text that exceeds textwidth 
 """ </Stable>
 
 """ <Experimental>
+
+set buftype=
+set modifiable
+
 """ </Experimental>
 
 """ <Legacy>
@@ -111,7 +115,7 @@ nnoremap > >>
 noremap <LEADER><CR> :nohlsearch<CR>
 
 " Folding.
-noremap <silent> <LEADER>o za
+noremap <silent> <LEADER>z za
 
 """" <Cursor Movement>
 
@@ -221,6 +225,18 @@ noremap <LEADER>pc :source $MYVIMRC<CR>:PlugClean<CR>
 """" </Other Useful Stuff>
 
 """ </Stable>
+
+""" <Tmp>
+
+nmap rf :e ~/scratchpad/init.vim<CR>
+			\sl
+			\ rc
+			\sj
+			\ h
+			\sj
+nmap re :q!<CR>:q!<CR>:q!<CR>:q!<CR>
+
+""" </Tmp>
 
 """ <Legacy>
 
@@ -361,9 +377,14 @@ Plug 'jaxbot/semantic-highlight.vim' " Every variable is a different color.
 
 "" <Editor Enhancement>
 
-Plug 'scrooloose/nerdcommenter'
-Plug 'junegunn/vim-easy-align'
-Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdcommenter'  " Comment code, with multiple languages support.
+Plug 'junegunn/vim-easy-align'   " Easily align =, +, #, etc. and even regex phrases.
+Plug 'jiangmiao/auto-pairs'      " Insert or delete brackets, parens, quotes in pairs.
+Plug 'tpope/vim-surround'        " Provides mappings to easily change, create, delete surroundings in pairs.
+Plug 'easymotion/vim-easymotion' " Provides a simple way to move between characters, words and lines.
+Plug 'Konfekt/FastFold'          " Automatic fold, currently cannot see any functions.
+Plug 'junegunn/vim-peekaboo'     " Extend \" and @ in normal mode, and <C-R> in command mode, show the contents of the registers on the sidebar.
+Plug 'svermeulen/vim-subversive'
 
 "" </Editor Enhancement>
 
@@ -398,12 +419,14 @@ hi NonText guibg=none
 
 " <Plugin Settings>
 
-" Do not use <C-H> to delete brackets, cause <C-H> has already been mapped to <Left> key.
-let g:AutoPairsMapCh = 0
 
 "" <auto-pairs>"
 
+" Do not use <C-H> to delete brackets, cause <C-H> has already been mapped to <Left> key.
+let g:AutoPairsMapCh = 0
+
 "" </auto-pairs>"
+
 
 "" <Colorizer>
 
@@ -417,6 +440,27 @@ let g:colorizer_syntax = 1
 let g:airline_powerline_fonts = 0
 
 "" </eleline.vim>
+
+"" <FastFold>
+
+nmap ffu <Plug>(FastFoldUpdate)
+let g:fastfold_savehook = 1
+let g:fastfold_fold_command_suffixes =  ['x','X','a','A','o','O','c','C']
+let g:fastfold_fold_movement_commands = [']z', '[z', 'zj', 'zk']
+let g:markdown_folding = 1
+let g:tex_fold_enabled = 1
+let g:vimsyn_folding = 'af'
+let g:xml_syntax_folding = 1
+let g:javaScript_fold = 1
+let g:sh_fold_enabled= 7
+let g:ruby_fold = 1
+let g:perl_fold = 1
+let g:perl_fold_blocks = 1
+let g:r_syntax_folding = 1
+let g:rust_fold = 1
+let g:php_folding = 1
+
+"" </FastFold>
 
 "" <nerdtree>
 
@@ -454,9 +498,10 @@ let g:NERDTreeIndicatorMapCustom = {
 
 "" <semantic-highlighting>
 
-nnoremap <LEADER>s :SemanticHighlightToggle<CR>
+nnoremap <LEADER>st :SemanticHighlightToggle<CR>
 
 "" </semantic-highlighting>
+
 
 "" <vim-easy-align>
 
@@ -464,6 +509,37 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 "" </vim-easy-align>
+
+"" <vim-easy-motion>
+
+" Disable the default mappings.
+let g:EasyMotion_do_mapping = 0
+" Turn on case-insensitive feature.
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_do_shade = 0
+
+" Go to character.
+map  f <Plug>(easymotion-bd-f2)
+nmap f <Plug>(easymotion-overwin-f2)
+" Go to word.
+map  <LEADER>/ <Plug>(easymotion-bd-w)
+nmap <LEADER>/ <Plug>(easymotion-overwin-w)
+
+" Replace the default search method with easy-motion's search. (better jump, but only in current file)
+map F <Plug>(easymotion-sn)
+
+"" </vim-easy-motion>
+
+"" <vim-peekaboo>
+
+noremap rr @2
+
+"" </vim-peekaboo>
+
+"" <vim-subversive>
+nmap <LEADER>s <plug>(SubversiveSubstitute)
+nmap ss <plug>(SubversiveSubstituteLine)
+"" </vim-subversive>
 
 "" <xtabline>
 
