@@ -1,12 +1,9 @@
 " Author: @NiiiKlaus
 " vim:fdm=marker
 
-" Editor Setup {{{
-
-"" <Options>
-
-""" <Stable>
-
+" Editor Setup | Tags: #base# #generic#{{{1
+" Options | Tags: #NULL#{{{2
+" Stable | Tags: #NULL#{{{3
 set autoindent                                    " Auto indent.
 set clipboard=unnamedplus                         " Share Vim register with system on Windows, macOS and Linux.
 set colorcolumn=81                                " Show a line that indicates recommended textwidth.
@@ -49,39 +46,33 @@ set noexpandtab                                   " Use softtabstop spaces inste
 set noshowmode                                    " Do not show current mode.
 set nowrap                                        " Text that exceeds textwidth will be shown in the next line.
 
-""" </Stable>
-
-""" <Experimental>
+"}}}3
+" Experimental | Tags: #NULL#{{{3
 
 set buftype=
 set modifiable
+set foldmethod=marker
+set foldlevel=1
 
-""" </Experimental>
-
-""" <Legacy>
-""" </Legacy>
-
-"" </Options>
-
-"" <Autocmds>
+"}}}3
+" Legacy | Tags: #NULL#{{{3
+"}}}3
+"}}}2
+" Autocmds | Tags: #NULL#{{{2
 
 " Jump to the place edited recently.
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-"" </Autocmds>
-
-"" <Mappings>
-
-""" <Stable>
-
-"""" <First of all>
+"}}}2
+" Mappings | Tags: #NULL#{{{2
+" Stable | Tags: #NULL#{{{3
+" First of all | Tags: #NULL#{{{4
 
 " Use <Space> as <LEADER>.
 let g:mapleader=" "
 
-"""" </First of all>
-
-"""" <Failsafe>
+"}}}4
+" Failsafe | Tags: #NULL#{{{4
 
 " Disable the default s key
 noremap s <Nop>
@@ -92,7 +83,7 @@ noremap <LEADER><LEADER><LEADER> <Nop>
 noremap <LEADER><LEADER><LEADER><LEADER> <Nop>
 noremap <LEADER><LEADER><LEADER><LEADER><LEADER> <Nop>
 
-"""" </Failsafe>
+"}}}4
 
 " Save and quit.
 noremap Q     :q<CR>
@@ -118,9 +109,8 @@ noremap <LEADER><CR> :nohlsearch<CR>
 " Folding.
 noremap <silent> <LEADER>z za
 
-"""" <Cursor Movement>
-
-""""" <Normal Mode>
+" Cursor Movement | Tags: #NULL#{{{4
+" Normal Mode | Tags: #NULL#{{{5
 
 " Faster horizontal navigation.
 noremap <silent> L 5l
@@ -142,29 +132,25 @@ noremap <silent> B 5b
 noremap <C-K> 5<C-Y>
 noremap <C-J> 5<C-E>
 
-""""" </Normal Mode>
-
-""""" <Insert Mode>
+"}}}5
+" Insert Mode | Tags: #NULL#{{{5
 
 inoremap <C-H> <Left>
 inoremap <C-L> <Right>
 inoremap <C-K> <Up>
 inoremap <C-J> <Down>
 
-""""" </Insert Mode>
-
-""""" <Command Mode>
+"}}}5
+" Command Mode | Tags: #NULL#{{{5
 
 cnoremap <C-H> <Left>
 cnoremap <C-L> <Right>
 cnoremap <C-K> <Up>
 cnoremap <C-J> <Down>
 
-""""" </Command Mode>
-
-"""" </Cursor Movement>
-
-"""" <Window Management>
+"}}}5
+"}}}4
+" Window Management | Tags: #NULL#{{{4
 
 " Use <LEADER> + arrow keys to move the cursor from window to window.
 noremap <LEADER>h <C-W>h
@@ -184,9 +170,8 @@ noremap <Down>  :res +5<CR>
 noremap <Left>  :vertical resize -5<CR>
 noremap <Right> :vertical resize +5<CR>
 
-"""" </Window Management>
-
-"""" <Tab Management>
+"}}}4
+" Tab Management | Tags: #NULL#{{{4
 
 " Create a new tab.
 noremap te :tabe<CR>
@@ -201,17 +186,16 @@ noremap tmi :+tabmove<CR>
 
 " Use tab in insert mode to auto complete code.
 function! CleverTab()
-        if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
-                return "\<Tab>"
-        else
-                return "\<C-N>"
-        endif
+	if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
+		return "\<Tab>"
+	else
+		return "\<C-N>"
+	endif
 endfunction
 inoremap <Tab> <C-R>=CleverTab()<CR>
 
-"""" </Tab Management>
-
-"""" <Other Useful Stuff>
+"}}}4
+" Other Useful Stuff | Tags: #NULL#{{{4
 
 " Spell check.
 noremap <LEADER>sc :set spell!<CR>
@@ -223,106 +207,101 @@ noremap <LEADER>pu :source $MYVIMRC<CR>:PlugUpdate<CR>
 " Clean plugins.
 noremap <LEADER>pc :source $MYVIMRC<CR>:PlugClean<CR>
 
-"""" </Other Useful Stuff>
-
-""" </Stable>
-
-""" <Tmp>
+"}}}4
+"}}}3
+" Tmp | Tags: #NULL#{{{3
 
 nmap rf :e ~/scratchpad/init.vim<CR>
 			\sl
-			\ rc
+			\rc
 			\sj
-			\ h
+			\h
 			\sj
-nmap re :q!<CR>:q!<CR>:q!<CR>:q!<CR>
 
-nmap gt o<Esc>cc"  \| Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfj0ll
-nmap gt1 o<Esc>cc"  \| Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfjA1<Esc>jA1<Esc>k0lli
-nmap gt2 o<Esc>cc"  \| Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfjA2<Esc>jA2<Esc>k0lli
-nmap gt3 o<Esc>cc"  \| Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfjA3<Esc>jA3<Esc>k0lli
-nmap gt4 o<Esc>cc"  \| Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfjA4<Esc>jA4<Esc>k0lli
-""" </Tmp>
+nmap gt o<Esc>cc"  \|  Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfj0ll
+nmap gt1 o<Esc>cc"  \|  Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfjA1<Esc>jA1<Esc>k0lli
+nmap gt2 o<Esc>cc"  \|  Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfjA2<Esc>jA2<Esc>k0lli
+nmap gt3 o<Esc>cc"  \|  Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfjA3<Esc>jA3<Esc>k0lli
+nmap gt4 o<Esc>cc"  \|  Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfjA4<Esc>jA4<Esc>k0lli
 
-""" <Legacy>
-
-"""" <No.1>
+"}}}3
+" Experimental | Tags: #NULL#{{{3
+noremap <C-S-Q> :qa<CR>
+noremap mk :setlocal foldmethod=marker<CR>zM
+"}}}3
+" Legacy | Tags: #NULL#{{{3
+" No.1 | Tags: #NULL#{{{4
 
 "" Compile functions.
 "noremap fj :call CompileRunGcc()<CR>
 
 "func! CompileRunGcc()
-	"exec "w"
-	"if &filetype == 'c'
-		""exec "!g++ % -o %<"
-		""exec "!./%<"
-		""exec "!time ./%<"
-		"exec "!g++ % -o %<"
-		"set splitbelow
-		":sp
-		":term ./%<
-	"elseif &filetype == 'cpp'
-		"set splitbelow
-		"exec "!g++ -std=c++11 % -Wall -o %<"
-		":sp
-		":res -15
-		":term ./%<
-	"elseif &filetype == 'java'
-		"exec "!javac %"
-		"exec "!time java %<"
-	"elseif &filetype == 'sh'
-		"":!time bash %
-		":sp
-		":term source %
-	"elseif &filetype == 'python'
-		"set splitbelow
-		":sp
-		":term python %
-	"elseif &filetype == 'html'
-		"silent! exec "!".g:mkdp_browser." % &"
-	"elseif &filetype == 'markdown'
-		"exec "MarkdownPreview"
-	"elseif &filetype == 'tex'
-		"silent! exec "VimtexStop"
-		"silent! exec "VimtexCompile"
-	"elseif &filetype == 'dart'
-		"CocCommand flutter.run
-	"elseif &filetype == 'go'
-		"set splitbelow
-		":sp
-		":term go run %
-	"endif
+"exec "w"
+"if &filetype == 'c'
+""exec "!g++ % -o %<"
+""exec "!./%<"
+""exec "!time ./%<"
+"exec "!g++ % -o %<"
+"set splitbelow
+":sp
+":term ./%<
+"elseif &filetype == 'cpp'
+"set splitbelow
+"exec "!g++ -std=c++11 % -Wall -o %<"
+":sp
+":res -15
+":term ./%<
+"elseif &filetype == 'java'
+"exec "!javac %"
+"exec "!time java %<"
+"elseif &filetype == 'sh'
+"":!time bash %
+":sp
+":term source %
+"elseif &filetype == 'python'
+"set splitbelow
+":sp
+":term python %
+"elseif &filetype == 'html'
+"silent! exec "!".g:mkdp_browser." % &"
+"elseif &filetype == 'markdown'
+"exec "MarkdownPreview"
+"elseif &filetype == 'tex'
+"silent! exec "VimtexStop"
+"silent! exec "VimtexCompile"
+"elseif &filetype == 'dart'
+"CocCommand flutter.run
+"elseif &filetype == 'go'
+"set splitbelow
+":sp
+":term go run %
+"endif
 "endfunc
 
-"""" </No.1>
+"}}}4
+"}}}3
+"}}}2
+"}}}1
 
-""" </Legacy>
-
-"" </Mappings>
-
-" </Editor Setup>
-
-" <Terminal Setup>
-
-"" <Mappings>
+" Terminal Setup | Tags: #NULL#{{{1
+" Mappings | Tags: #NULL#{{{2
 
 " Make <Esc> in terminal mode the same effect as <Esc> in insert mode.
 tnoremap <Esc> <C-\><C-N>
 
-" Use <Alt> + allow keys to switch between splited windows.
+"" Use <Alt> + allow keys to switch between splited windows.
 "tnoremap <A-H> <C-\><C-N><C-W>h
 "tnoremap <A-J> <C-\><C-N><C-W>j
 "tnoremap <A-K> <C-\><C-N><C-W>k
 "tnoremap <A-L> <C-\><C-N><C-W>l
 
-"" </Mappings>
-
-"" <Autocmds>
+"}}}2
+" Autocmds | Tags: #NULL#{{{2
 
 " Automatically enter insert mode once open up a terminal buffer.
 autocmd TermOpen term://* startinsert
 
-"" </Autocmds>
+"}}}2
 
 " Neovim only. Set terminal colors.
 let g:terminal_color_0  = '#000000'
@@ -341,13 +320,12 @@ let g:terminal_color_12 = '#CAA9FA'
 let g:terminal_color_13 = '#FF92D0'
 let g:terminal_color_14 = '#9AEDFE'
 
-" </Terminal Setup>
+"}}}1
 
-" <Install Plugins with vim-plug>
+" Install Plugins with Vim-plug | Tags: #NULL#{{{1
 
 call plug#begin('~/.config/nvim/plugged')
-
-"" <Dress Up>
+" Dress Up | Tags: #NULL#{{{2
 
 "Plug 'liuchengxu/eleline.vim' " Elegant statusline.
 Plug 'bling/vim-bufferline'    " Show the list of buffers.
@@ -356,62 +334,55 @@ Plug 'chrisbra/Colorizer'      " Color colornames and codes.
 Plug 'mg979/vim-xtabline'      " Colorful tabline.
 Plug 'ryanoasis/vim-devicons'  " prettify vim with little unicode icons, support several plugins
 
-
-""" <Color Schemes>
+" Color Schemes | Tags: #NULL#{{{3
 
 Plug 'ajmwagar/vim-deus'     " A better color scheme for late night coders.
 Plug 'crusoexia/vim-dracula' " Love Dracula :) .
 
-""" </Color Schemes>
+"}}}3
 
-"" </Dress Up>
-
-"" <File Navigation>
+"}}}2
+" File Navigation | Tags: #NULL#{{{2
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } " File system explorer.
 Plug 'Xuyuanp/nerdtree-git-plugin'                     " Show git status flag. Work with latest NERDTree.
 
-"" </File Navigation>
-
-"" <Visual Enhancement>
+"}}}2
+" Visual Enhancement | Tags: #NULL#{{{2
 
 Plug 'RRethy/vim-illuminate'         " Automatically highlighting other uses of the current word under the cursor. IDE-like feature.
 Plug 'luochen1990/rainbow'           " Show different levels of parentheses in different colors.
 Plug 'jaxbot/semantic-highlight.vim' " Every variable is a different color.
 
-"" </Visual Enhancement>
+"}}}2
+" Editor Enhancement | Tags: #NULL#{{{2
 
-"" <Editor Enhancement>
-
-Plug 'scrooloose/nerdcommenter'  " Comment code, with multiple languages support.
-Plug 'junegunn/vim-easy-align'   " Easily align =, +, #, etc. and even regex phrases.
 Plug 'jiangmiao/auto-pairs'      " Insert or delete brackets, parens, quotes in pairs.
-Plug 'tpope/vim-surround'        " Provides mappings to easily change, create, delete surroundings in pairs.
-Plug 'easymotion/vim-easymotion' " Provides a simple way to move between characters, words and lines.
 Plug 'Konfekt/FastFold'          " Automatic fold, currently cannot see any functions.
+Plug 'scrooloose/nerdcommenter'  " Comment code, with multiple languages support.
+Plug 'AndrewRadev/switch.vim'
+Plug 'junegunn/vim-easy-align'   " Easily align =, +, #, etc. and even regex phrases.
+Plug 'easymotion/vim-easymotion' " Provides a simple way to move between characters, words and lines.
 Plug 'junegunn/vim-peekaboo'     " Extend \" and @ in normal mode, and <C-R> in command mode, show the contents of the registers on the sidebar.
-Plug 'svermeulen/vim-subversive'
+Plug 'svermeulen/vim-subversive' " Provides two new operator motions to make it very easy to perform quick substitutions.
+Plug 'tpope/vim-surround'        " Provides mappings to easily change, create, delete surroundings in pairs.
+Plug 'mg979/vim-visual-multi'    " In analogy with visual-block mode, but this plugin works mostly from normal mode.
 
-"" </Editor Enhancement>
-
-"" <Productivity>
-"" </Productivity>
-
+"}}}2
+" Productivity | Tags: #NULL#{{{2
+"}}}2
 call plug#end()
 
-" </Install Plugins with vim-plug>
+"}}}1
 
-" <Switches>
-
-
-"" <Color Schemes>
+" Switches | Tags: #NULL#{{{1
+" Color Schemes | Tags: #NULL#{{{2
 
 "color deus
 color dracula
 
-"" </Color Schemes>
-
-"" <Always On>
+"}}}2
+" Always on | Tags: #NULL#{{{2
 
 " Transparency.
 hi Normal ctermbg=none
@@ -419,35 +390,28 @@ hi NonText ctermbg=none
 hi Normal guibg=none
 hi NonText guibg=none
 
-"" </Always On>
+"}}}2
+"}}}1
 
-" </Switches>
-
-" <Plugin Settings>
-
-
-"" <auto-pairs>"
+" Plugin Settings | Tags: #NULL#{{{1
+" auto-pairs | Tags: #NULL#{{{2
 
 " Do not use <C-H> to delete brackets, cause <C-H> has already been mapped to <Left> key.
 let g:AutoPairsMapCh = 0
 
-"" </auto-pairs>"
-
-
-"" <Colorizer>
+"}}}2
+" Colorizer | Tags: #NULL#{{{2
 
 " Highlight according to syntax.
 let g:colorizer_syntax = 1
 
-"" </Colorizer>
-
-"" <eleline.vim>
+"}}}2
+" eleline.vim | Tags: #NULL#{{{2
 
 let g:airline_powerline_fonts = 0
 
-"" </eleline.vim>
-
-"" <FastFold>
+"}}}2
+" Fastfold | Tags: #NULL#{{{2
 
 nmap ffu <Plug>(FastFoldUpdate)
 let g:fastfold_savehook = 1
@@ -466,9 +430,8 @@ let g:r_syntax_folding = 1
 let g:rust_fold = 1
 let g:php_folding = 1
 
-"" </FastFold>
-
-"" <nerdtree>
+"}}}2
+" nerdtree | Tags: #NULL#{{{2
 
 map tt :NERDTreeToggle<CR>
 "let NERDTreeMapOpenExpl = ""
@@ -483,9 +446,8 @@ map tt :NERDTreeToggle<CR>
 "let NERDTreeMapChangeRoot = "y"
 "let NERDTreeShowHidden = 1
 
-"" </nerdtree>
-
-"" <nerdtree-git-plugin>
+"}}}2
+" nerdtree-git-plugin | Tags: #NULL#{{{2
 
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
@@ -500,23 +462,19 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
-"" </nerdtree-git-plugin>
-
-"" <semantic-highlighting>
+"}}}2
+" semantic-highlight.vim | Tags: #NULL#{{{2
 
 nnoremap <LEADER>st :SemanticHighlightToggle<CR>
 
-"" </semantic-highlighting>
-
-
-"" <vim-easy-align>
+"}}}2
+" vim-easy-align | Tags: #NULL#{{{2
 
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
-"" </vim-easy-align>
-
-"" <vim-easy-motion>
+"}}}2
+" vim-easy-motion | Tags: #NULL#{{{2
 
 " Disable the default mappings.
 let g:EasyMotion_do_mapping = 0
@@ -534,20 +492,33 @@ nmap <LEADER>/ <Plug>(easymotion-overwin-w)
 " Replace the default search method with easy-motion's search. (better jump, but only in current file)
 map F <Plug>(easymotion-sn)
 
-"" </vim-easy-motion>
-
-"" <vim-peekaboo>
+"}}}2
+" vim-peekaboo | Tags: #NULL#{{{2
 
 noremap rr @2
 
-"" </vim-peekaboo>
+"}}}2
+" vim-subversive | Tags: #NULL#{{{2
 
-"" <vim-subversive>
 nmap <LEADER>s <plug>(SubversiveSubstitute)
 nmap ss <plug>(SubversiveSubstituteLine)
-"" </vim-subversive>
 
-"" <xtabline>
+"}}}2
+" vim-visual-multi |  Tags: #NULL#{{{2
+
+"let g:VM_leader = {'default': ',', 'visual': ',', 'buffer': ','}
+"let g:VM_maps = {}
+"let g:VM_maps['Find Under']         = '<C-j>'
+"let g:VM_maps['Find Subword Under'] = '<C-j>'
+"let g:VM_maps['Find Next']         = ''
+"let g:VM_maps['Find Prev']         = ''
+"let g:VM_maps['Remove Region'] = 'q'
+"let g:VM_maps['Skip Region'] = ''
+"let g:VM_maps["Undo"]      = 'u'
+"let g:VM_maps["Redo"]      = '<C-R>'
+
+"}}}2
+" vim-xtabline | Tags: #NULL#{{{2
 
 let g:xtabline_settings = {}
 let g:xtabline_settings.enable_mappings = 0
@@ -557,6 +528,6 @@ let g:xtabline_settings.last_open_first = 1
 "noremap xcm :XTabCycleMode<CR>
 "noremap xti :XTabInfo<CR>
 
-"" </xtabline>
+"}}}2
+"}}}1
 
-" </Plugin Settings>
