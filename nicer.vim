@@ -355,6 +355,12 @@ Plug 'luochen1990/rainbow'           " Show different levels of parentheses in d
 Plug 'jaxbot/semantic-highlight.vim' " Every variable is a different color.
 
 "}}}2
+" Language Specified |  Tags: #NULL#{{{2
+
+" Markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+
+"}}}2
 " Editor Enhancement | Tags: #NULL#{{{2
 
 Plug 'jiangmiao/auto-pairs'      " Insert or delete brackets, parens, quotes in pairs.
@@ -429,6 +435,33 @@ let g:perl_fold_blocks = 1
 let g:r_syntax_folding = 1
 let g:rust_fold = 1
 let g:php_folding = 1
+
+"}}}2
+" markdown-preview.nvim |  Tags: #NULL#{{{2
+
+let g:mkdp_auto_start = 0
+let g:mkdp_auto_close = 1
+let g:mkdp_refresh_slow = 0
+let g:mkdp_command_for_global = 0
+let g:mkdp_open_to_the_world = 1
+let g:mkdp_open_ip = ''
+let g:mkdp_echo_preview_url = 1
+let g:mkdp_browserfunc = ''
+let g:mkdp_browser = 'chromium'
+let g:mkdp_preview_options = {
+			\ 'mkit': {},
+			\ 'katex': {},
+			\ 'uml': {},
+			\ 'maid': {},
+			\ 'disable_sync_scroll': 0,
+			\ 'sync_scroll_type': 'middle',
+			\ 'hide_yaml_meta': 1
+			\ }
+let g:mkdp_markdown_css = ''
+let g:mkdp_highlight_css = ''
+let g:mkdp_port = 12345
+let g:mkdp_page_title = '「${name}」'
+let g:mkdp_filetypes = ['markdown']
 
 "}}}2
 " nerdtree | Tags: #NULL#{{{2
