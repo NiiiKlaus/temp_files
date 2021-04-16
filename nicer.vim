@@ -367,6 +367,7 @@ Plug 'jiangmiao/auto-pairs'      " Insert or delete brackets, parens, quotes in 
 Plug 'Konfekt/FastFold'          " Automatic fold, currently cannot see any functions.
 Plug 'scrooloose/nerdcommenter'  " Comment code, with multiple languages support.
 Plug 'AndrewRadev/switch.vim'
+Plug 'Chiel92/vim-autoformat'
 Plug 'junegunn/vim-easy-align'   " Easily align =, +, #, etc. and even regex phrases.
 Plug 'easymotion/vim-easymotion' " Provides a simple way to move between characters, words and lines.
 Plug 'junegunn/vim-peekaboo'     " Extend \" and @ in normal mode, and <C-R> in command mode, show the contents of the registers on the sidebar.
@@ -500,6 +501,9 @@ let g:NERDTreeIndicatorMapCustom = {
 
 nnoremap <LEADER>st :SemanticHighlightToggle<CR>
 
+"}}}2
+" vim-autoformat |  Tags: #NULL#{{{2
+nnoremap \f :Autoformat<CR>
 "}}}2
 " vim-easy-align | Tags: #NULL#{{{2
 
