@@ -223,6 +223,7 @@ nmap gt1 o<Esc>cc"  \|  Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>z
 nmap gt2 o<Esc>cc"  \|  Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfjA2<Esc>jA2<Esc>k0lli
 nmap gt3 o<Esc>cc"  \|  Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfjA3<Esc>jA3<Esc>k0lli
 nmap gt4 o<Esc>cc"  \|  Tags: #NULL#<Esc>o<Esc>k:setlocal foldmethod=marker<CR>zfjA4<Esc>jA4<Esc>k0lli
+noremap fj :source %<CR>
 
 "}}}3
 " Experimental | Tags: #NULL#{{{3
